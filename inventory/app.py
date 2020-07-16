@@ -20,7 +20,7 @@ db.init_app(app)
 
 api = Api(app, version='0.1.1', title='Inventory Service', description='Inventory Service for k8s')
 
-ns = api.namespace('course', description="Courses Namespace")
+ns = api.namespace('inventory', description="Inventory Namespace")
 
 inventory_parser = utils.get_inventory_parser()
 inventory_model = utils.get_inventory_model(api)
