@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 import os
 import logging
 from flask_restplus import Api, Resource, fields, reqparse
-from models import db, Course
+from models import db, Inventory
 import utils
 
 app = Flask(__name__)
